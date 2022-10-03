@@ -3,7 +3,7 @@ const router = require('./route')
 const app = express()
 
 const host = 'localhost';
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.get('/', function (req, res) {
     res.json({
